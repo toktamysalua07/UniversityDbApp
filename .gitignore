@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+secrets.json
+appsettings.*.local.json
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.tmp
+*.temp
+*.log
+TestResults/

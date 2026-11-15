@@ -1,0 +1,3 @@
+@model UniversityDbApp.Models.Teacher
+@{ViewData["Title"]="Remove teacher";}
+<div class="page-heading"><div><div class="eyebrow">PEOPLE DIRECTORY / REMOVE</div><h1>Remove this profile?</h1><p>The teacher will be removed from the directory.</p></div></div><section class="panel confirm-panel"><span class="person-avatar person-avatar-lg">@Model.FirstName[..1]@Model.LastName[..1]</span><h2>@Model.FullName</h2><p>@Model.Position · @Model.Department.Name</p><form asp-action="Delete" method="post"><input type="hidden" asp-for="Id"/><a asp-action="Index" class="btn btn-quiet">Keep profile</a><button class="btn btn-danger">Remove teacher</button></form></section>

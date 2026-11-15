@@ -1,0 +1,5 @@
+@model UniversityDbApp.Models.Department
+@{ViewData["Title"]="New department";}
+<div class="page-heading"><div><div class="eyebrow">ACADEMIC UNITS / NEW</div><h1>Create a department</h1><p>Add a home for people, research, and ideas.</p></div><a asp-action="Index" class="btn btn-soft"><i class="bi bi-arrow-left"></i> Back to departments</a></div>
+<form asp-action="Create" method="post" class="panel form-panel"><partial name="_Form" model="Model"/><div class="form-actions"><a asp-action="Index" class="btn btn-quiet">Cancel</a><button class="btn btn-primary"><i class="bi bi-plus-lg"></i> Create department</button></div></form>
+@section Scripts{<partial name="_ValidationScriptsPartial"/>}
