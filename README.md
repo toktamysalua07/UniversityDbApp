@@ -61,15 +61,15 @@ Visual Studio 2026 немесе .NET 10 SDK, SQL Server (Express/Developer) жә
 ```powershell
 dotnet restore
 dotnet tool install --global dotnet-ef --version 10.0.0
-dotnet ef migrations add InitialDb
 dotnet ef database update
 dotnet run
 ```
 
+`InitialDb` және `RepairLegacyCampusSchema` миграциялары репозиторийге енгізілген. Сондықтан оларды қайтадан `migrations add` пәрменімен жасамаңыз. Модельді кейін өзгерткенде ғана жаңа миграция жасаңыз, мысалы `dotnet ef migrations add AddNewField`.
+
 Visual Studio Package Manager Console баламасы:
 
 ```powershell
-Add-Migration InitialDb
 Update-Database
 ```
 
